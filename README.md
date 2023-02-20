@@ -1,3 +1,5 @@
+Locate the notebook in this repo to begin.
+
 # Podcast Summarizer
 Podcast are a wealth of information, but they tend to have tons of episodes that are upwards of 1-2 hours per. This Google Colab will take a given podcast feed and will create a transcript and "good enough" summary for each audio episode for free! There is also an option to use OpenAI's GPT3, which does charge, but is super cheap.
 
@@ -16,15 +18,15 @@ This project is aiming for good enough to quickly read through.
 ## FAQ
 
 ### Does my computer need a graphics card?
-NO! This runs in the cloud and does NOT require your personal machine to have a graphics card.
+No! This runs in the cloud and does NOT require your personal machine to have a graphics card.
 
 ### Where is the output located?
-gDrive -> My Drive -> Summarize_Podcasts -> PODCAST_NAME_HERE -> Transcript <br>
+gDrive -> My Drive -> Summarize_Podcasts -> PODCAST_NAME_HERE -> <br>
 
-In you gDrive there will be a directory called "Summarize_Podcasts". When you run this notebook for a podcast a directory will be created in this folder by that name. Podcast "Reply All" will be "replyall". In there you will find the "transcript" folder where you will find the transcript and summary.
+In this directory, you will find the "transcripts" & "summary" folders where you will find the respective files.
 
 ### How long does this need to run?
-* In testing, for a 1 hour podcast episode it takes around 20-25 minutes.
+* In testing, for a 1 hour podcast episode it takes around 30 minutes.
 
 ### Which Runtime Type?
 You will need to use a **GPU** Runtime. In order to select a runtime, on the menu: 
@@ -49,6 +51,9 @@ If you run this a few times, you will need to empty your gdrive trash to free up
 ### Which languages are supported?
 * English
 While Whisper does support additional languages, with varying degrees of accuracy, I don't know enough of the various languages to validate if the summarization is even in the "good enough" category. Reach out if you want to help.
+
+### How do I get the RSS Feed XML?
+An easy trick to do is to find the podcast on Apple Podcast by googling "PODCASTNAMEHERE Apple Podcasts", navigate to it, copy the URL to that specific podcast, paste the url on [this website](https://www.labnol.org/podcast/) and then copy the link in "View RSS Feed".
 
 ### How do I track progress?
 After you click the run button, scroll down to the bottom to see the logs to see the progress.
